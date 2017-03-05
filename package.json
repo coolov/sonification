@@ -1,0 +1,14 @@
+{
+  "name": "sonification",
+  "version": "1.0.0",
+  "main": "watch.js",
+  "scripts": {
+    "dev": "node watch.js"
+  },
+  "devDependencies": {
+    "ws": "^2.2.0"
+  },
+  "dependencies": {
+    "tone": "^0.9.0"
+  }
+}

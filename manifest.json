@@ -1,0 +1,19 @@
+{
+  "name": "sonification",
+  "version": "1.0",
+  "description": "supersonic advertising agency",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "webRequestBlocking",
+    "webNavigation",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "build/main.js",
+      "tools/reload.js"
+    ]
+  },
+  "manifest_version": 2
+}
