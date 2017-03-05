@@ -19,9 +19,8 @@ function reload() {
 // start watching the src directory
 compiler.watch({}, (err, stats) => {
   if (err || stats.hasErrors()) {
-    // Handle errors here
+    // todo: pretty-print errors here
     console.log('epic fail :(');
-    // console.log(stats);
   } else {
     console.log('done!');
     reload();
