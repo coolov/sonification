@@ -1,7 +1,10 @@
 {
-  "name": "sonification",
+  "name": "Oscillations",
   "version": "1.0",
-  "description": "supersonic advertising agency",
+  "description": "Music for networks",
+  "icons": {
+    "128": "icon128.png"
+  },
   "permissions": [
     "webRequest",
     "storage",
@@ -15,5 +18,10 @@
       "tools/reload.js"
     ]
   },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["tools/content-script.js"],
+    "run_at": "document_start"
+  }],
   "manifest_version": 2
 }
